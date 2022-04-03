@@ -1,0 +1,68 @@
+@import "_globalStyle";
+@import "_variables";
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  align-items: flex-start;
+
+  @media (min-width: 376px) {
+    align-items: center;
+  }
+}
+.advice-container {
+  margin: 20vh 4vw;
+  background-color: $neutral-2;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 10vw;
+  padding-bottom: 4em;
+
+  .heading__h4 {
+    color: $primary-color;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 15px;
+    font-weight: lighter;
+  }
+  .advice__quote {
+    text-align: center;
+    font-weight: 800;
+    font-size: $font-size;
+  }
+  .divider {
+    width: 100%;
+    height: auto;
+  }
+  .advice__generator {
+    position: absolute;
+    bottom: -10%;
+    height: 60px;
+    width: 60px;
+    background-color: $primary-color;
+    border: transparent;
+    border-radius: 50%;
+    outline: none;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: rgba(82, 255, 168, 0.5) 0px 2px 50px 10px;
+    }
+    &:active {
+      svg {
+        transform: rotate(360deg);
+        transition-delay: 0.4s;
+        transition: transform 0.5s linear;
+      }
+    }
+  }
+  @media (min-width: 376px) {
+    width: 40%;
+    height: auto;
+    padding: 4vw;
+    padding-bottom: 5em;
+  }
+}

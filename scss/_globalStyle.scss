@@ -1,0 +1,33 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::after {
+  box-sizing: inherit;
+}
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+body {
+  background-color: hsl(218, 23%, 16%);
+  font-family: "Manrope", sans-serif;
+  //   font-size: 28px;
+  color: hsl(193, 38%, 86%);
+}
+.flex {
+  display: flex;
+
+  &-jc-c {
+    justify-content: center;
+  }
+  &-jc-fs {
+    justify-content: flex-start;
+  }
+  &-ai-c {
+    align-items: center;
+  }
+}

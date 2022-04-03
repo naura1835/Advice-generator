@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Advice generator app</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container flex flex-jc-c">
+      <div class="advice-container flex flex-jc-fs flex-ai-c">
+        <h4 class="heading__h4">Advice #</h4>
+        <p class="advice__quote"></p>
+        <img
+          src="images/pattern-divider-desktop.svg"
+          alt="divider line"
+          class="divider"
+        />
+        <button
+          class="advice__generator flex flex-jc-c flex-ai-c"
+          onclick="getAdviceQuote()"
+        >
+          <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 
+              4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 
+              1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 
+              4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 
+              0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z"
+              fill="#202733"
+            />
+          </svg>
+        </button>
+      </div>
+    </main>
+    <!-- Advice # Advice ID goes here -->
+
+    <!--"Advice text goes here" -->
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script src="index.js"></script>
+  </body>
+</html>
