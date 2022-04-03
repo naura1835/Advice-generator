@@ -9,7 +9,6 @@ const getAdviceQuote = () => {
       document.querySelector(
         ".advice__quote"
       ).innerHTML = `"${data.slip.advice}"`;
-      //   dice.style.transform = "rotate(180deg)";
     })
     .catch((e) => console.log(e));
 };

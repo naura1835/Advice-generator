@@ -21,6 +21,10 @@ body {
 .flex {
   display: flex;
 
+  &-fd-c {
+    flex-direction: column;
+  }
+
   &-jc-c {
     justify-content: center;
   }
